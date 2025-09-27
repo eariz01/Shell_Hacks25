@@ -1,0 +1,43 @@
+import { useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react"; // nice arrow icons
+
+export default function CardCarousel() {
+  // Example list of objects
+  const cards = [
+    { id: 1, title: "Card 1", description: "This is the first card" },
+    { id: 2, title: "Card 2", description: "This is the second card" },
+    { id: 3, title: "Card 3", description: "This is the third card" },
+  ];
+
+  const [index, setIndex] = useState(0);
+
+  // Move left
+  const prevCard = () => {
+    setIndex((prev) => (prev === 0 ? cards.length - 1 : prev - 1));
+  };
+
+  // Move right
+  const nextCard = () => {
+    setIndex((prev) => (prev === cards.length - 1 ? 0 : prev + 1));
+  };
+
+  return (
+    <div className="flex items-center justify-center space-x-4">
+      {/* Left Arrow */}
+      <button onClick={prevCard} className="p-2 rounded-full bg-gray-200 hover:bg-gray-300">
+        <ChevronLeft size={24} />
+      </button>
+
+      {/* Card Display */}
+      <div className="p-6 w-64 text-center rounded-2xl shadow-lg bg-white">
+        <h2 className="text-xl font-bold">{cards[index].title}</h2>
+        <p className="text-gray-600">{cards[index].description}</p>
+      </div>
+
+      {/* Right Arrow */}
+      <button onClick={nextCard} className="p-2 rounded-full bg-gray-200 hover:bg-gray-300">
+        <ChevronRight size={24} />
+      </button>
+    </div>
+  );
+}
