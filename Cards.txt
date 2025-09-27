@@ -1,3 +1,4 @@
+https://www.capitalone.com/credit-cards/compare/
 CARD_CATALOG = [
     {"id": "platinum_mastercard", "name": "Platinum Mastercard®", "category": "general", "rewards_summary": "No rewards — credit building / simple terms", "annual_fee": 0, "min_credit_score": None, "features": ["no-annual-fee"], "source": "https://www.capitalone.com/credit-cards/compare/"},
     {"id": "platinum_secured", "name": "Platinum Secured", "category": "secured", "rewards_summary": "Secured card to build credit (refundable deposit)", "annual_fee": 0, "min_credit_score": None, "features": ["secured", "build-credit"], "source": "https://www.capitalone.com/credit-cards/compare/"},
