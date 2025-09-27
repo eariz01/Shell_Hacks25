@@ -1,0 +1,57 @@
+===============================================
+GITIGNORE FOR PYTHON PROJECTS (Recommended)
+===============================================
+-----------------------------------------------
+1. VIRTUAL ENVIRONMENT
+-----------------------------------------------
+Exclude the directory where Python libraries are installed.
+This prevents huge files like torch_cpu.dll and dnnl.lib from being committed.
+We include the common names (.venv, venv, and your specific 'shellVenv').
+.venv/
+venv/
+shellVenv/
+
+-----------------------------------------------
+2. PYTHON COMPILED FILES
+-----------------------------------------------
+Compiled code files (not necessary to share)
+pycache/
+*.pyc
+*.pyd
+*.so
+
+-----------------------------------------------
+3. TEST & BUILD ARTIFACTS
+-----------------------------------------------
+Files created by packaging tools
+dist/
+build/
+*.egg-info/
+.coverage
+
+-----------------------------------------------
+4. OPERATING SYSTEM & EDITOR FILES
+-----------------------------------------------
+macOS
+.DS_Store
+
+Windows thumbnail cache
+Thumbs.db
+
+VS Code / JetBrains / common IDE files
+.vscode/
+.idea/
+
+Jupyter Notebook Checkpoints
+.ipynb_checkpoints
+
+-----------------------------------------------
+5. DATA, LOGS, & SECRETS
+-----------------------------------------------
+Files where secrets, API keys, or large data are often stored.
+If you are passing your API key via a local file, it MUST be ignored.
+.env
+.env.local
+secrets.json
+*.log
+*.sqlite3

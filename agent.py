@@ -1,6 +1,27 @@
 import json
 from pathlib import Path
 
+#AI Things
+
+from google.adk.agents import LlmAgent
+
+MODEL = "gemini-2.0-flash-001"
+
+def compare_cards(purchase_json, credit_card_list):
+    print("This will do something soon")    
+    
+
+
+card_agent = LlmAgent(
+    model=MODEL,
+    name="Cappy",
+    description="Discovers the best credit card fit for someone based off their spending profile",
+    instruction="You are a credit card expert from CapitalOne named Cappy. Your job is to use the tool {compare_cards} to help customers find the right credit card fit based off of their spending profile!",
+    tools=[compare_cards]
+)
+
+
+
 # ---------- Expanded CARD_CATALOG ----------
 CARD_CATALOG = [
     {
