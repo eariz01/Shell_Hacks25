@@ -11,12 +11,33 @@ import asyncio
 from google.adk.runners import Runner
 from google.genai.types import Content, Part
 from google.adk.tools.function_tool import FunctionTool
+import re
 
 session_service = InMemorySessionService()
 MODEL = "gemini-2.0-flash-001"
 APP_NAME = "cappy_app"
 USER_ID = "local_user"
 SESSION_ID = "main"
+
+
+
+def extract_json_block(text: str) -> str:
+    if not text:
+        return ""
+    s = text.strip()
+
+    # 1) Strip Markdown code fences if present
+    if s.startswith("```"):
+        s = re.sub(r"^```(?:json)?\s*|\s*```$", "", s, flags=re.DOTALL).strip()
+
+    # 2) Fallback: pull out the first {...} block
+    if not s.startswith("{"):
+        i, j = s.find("{"), s.rfind("}")
+        if i != -1 and j != -1 and j > i:
+            s = s[i : j + 1].strip()
+
+    return s
+
 
 
 # ---------- Score each card ----------
@@ -47,8 +68,7 @@ def compare_cards(synthetic_transactions_json: str, credit_card_json: str) -> st
         and their calculated net rewards, which the AI should then use to generate a response.
     """
     
-
-# 1. Load Data: Deserialize the JSON strings passed by the agent
+    # 1. Load Data: Deserialize the JSON strings passed by the agent
     purchases: list[dict[str, Any]] = json.loads(synthetic_transactions_json)
     card_catalog: list[dict[str, Any]] = json.loads(credit_card_json)
 
@@ -84,25 +104,8 @@ def compare_cards(synthetic_transactions_json: str, credit_card_json: str) -> st
         "spending_profile": spending_by_category
     })
 
+compare_cards_tool = FunctionTool(compare_cards)
 
-compare_cards_tool = FunctionTool(
-    description="Compare spending vs. a card catalog; return sorted recommendations with net rewards.",
-    fn=compare_cards,
-    parameters={
-        "type": "object",
-        "properties": {
-            "synthetic_transactions_json": {
-                "type": "string",
-                "description": "JSON array of transactions with fields: type ('debit'), merchantCategory/category, amount."
-            },
-            "credit_card_json": {
-                "type": "string",
-                "description": "JSON array of card objects (name, annual_fee, rewards, etc.)."
-            }
-        },
-        "required": ["synthetic_transactions_json", "credit_card_json"]
-    },
-)
 
 card_agent = LlmAgent(
     model=MODEL,
@@ -114,13 +117,23 @@ card_agent = LlmAgent(
         "Then produce a final JSON object EXACTLY matching this schema:\n"
         "{\n"
         '  "recommendations": [\n'
-        '    {"card_id": string, "name": string, "net_rewards": number, "reason": string},\n'
-        '    {"card_id": string, "name": string, "net_rewards": number, "reason": string},\n'
-        '    {"card_id": string, "name": string, "net_rewards": number, "reason": string}\n'
+        '    {"card_id": string, "name": string, "net_rewards": number, "total_savings": number, "reason": string},\n'
+        '    {"card_id": string, "name": string, "net_rewards": number, "total_savings": number, "reason": string},\n'
+        '    {"card_id": string, "name": string, "net_rewards": number, "total_savings": number, "reason": string}\n'
         "  ]\n"
         "}\n"
-        "Rules: pick the top 3 by net_rewards from the tool output; the 'reason' MUST be exactly two sentences, "
+        "When selecting cards, make sure that the cards are not derivatives of eachother"
+        "That means you can NOT select one version of the card, the student version of that same card, or the Good credit of each card, you must decide which of those derivatives is the best match"
+        "If you select two derivative credit cards of eachother, select the next best option of a different variety"
+        "Rules: pick the top 3 by net_rewards from the tool output;"
+        "You should have 3 reasons for every card"
+        "First line of reasoning: You first want to cite why the card is a strong match with the shopping profile."
+        "Second line of reasoning:  Next, you want to explain its placement within the rankings among the cards, and why it outperforms other cards."
+        "Finally, you must add an further justification as to why it is a good fit for the customer, providing the reasons that it will benefit the customers lifestyle"
+        "The reasonings for each individual cardmust all be seperated as a list in the format: Reason #X, in which X is a place holder for 1, 2, 3"
+        "The total_savings should be the net_rewards + the signup bonus if the spending-threshold is met"
         "grounded in the spending profile and card features (categories, fees). Do NOT include any extra text—JSON ONLY."
+        "Output MUST be raw JSON only (no code fences, no prose, no backticks)."
     ),
     tools=[compare_cards_tool],
 )
@@ -224,44 +237,60 @@ CARD_CATALOG = [
 
 
 
-
 async def main():
-    # Load synthetic transactions
+    # 1) Read raw JSON strings (not Python objects)
     TRANSACTION_FILE = Path("synthetic_transactions.json")
-    transactions = json.loads(TRANSACTION_FILE.read_text(encoding="utf-8"))
+    transactions_json = TRANSACTION_FILE.read_text(encoding="utf-8")
 
-    # Convert once
     CARD_FILE = Path("credit_card.json")
-    cards = json.loads(TRANSACTION_FILE.read_text(encoding="utf-8"))
+    cards_json = CARD_FILE.read_text(encoding="utf-8")
 
-    # Set up session + runner (you already created session_service above)
-    session_service = InMemorySessionService()
+    # (Optional) sanity checks
+    print("Transactions file length:", len(transactions_json))
+    print("Cards file length:", len(cards_json))
+
+    # 2) Set up runner
     runner = Runner(agent=card_agent, app_name=APP_NAME, session_service=session_service)
     await runner.session_service.create_session(app_name=APP_NAME, user_id=USER_ID, session_id=SESSION_ID)
 
+    # 3) Single, deterministic prompt that tells the agent to call the tool and THEN return JSON only
     directive = (
-        "Call the compare_cards tool now using the two JSON strings below, "
-        "then return ONLY the final JSON per schema (no other text).\n"
-        f"synthetic_transactions_json={spending_summary_json}\n"
-        f"credit_card_json={card_catalog_json}\n"
+        "You have two JSON strings. Call the compare_cards tool with them exactly as strings, "
+        "then return ONLY the final JSON per the schema (no other text).\n"
+        f"synthetic_transactions_json={transactions_json}\n"
+        f"credit_card_json={cards_json}\n"
     )
     msg = Content(role="user", parts=[Part(text=directive)])
 
     final_text = None
-
     async for ev in runner.run_async(user_id=USER_ID, session_id=SESSION_ID, new_message=msg):
         if ev.is_final_response() and ev.content and ev.content.parts:
             final_text = ev.content.parts[0].text
 
     if not final_text:
         raise RuntimeError("Agent returned no response.")
-    data = json.loads(final_text)
-    assert "recommendations" in data and len(data["recommendations"]) == 3, "Agent must return exactly 3 recommendations."
 
+    #AI Keeps giving data in Markdown, fixing that
+    final_text = extract_json_block(final_text)
+
+    # 4) Try to parse JSON; if it fails, print what the model returned so you can see the problem
+    try:
+        data = json.loads(final_text)
+    except json.JSONDecodeError:
+        print("---- MODEL RAW OUTPUT (not valid JSON) ----")
+        print(final_text)  # helps you debug if the model added prose
+        raise
+
+    # 5) Validate schema
+    assert "recommendations" in data and len(data["recommendations"]) == 3, "Agent must return exactly 3 recommendations."
     for r in data["recommendations"]:
         assert all(k in r for k in ("card_id", "name", "net_rewards", "reason")), "Missing keys in a recommendation."
 
     print(json.dumps(data, indent=2))
+    OUTPUT_FILE = Path("recommendations.json")
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2)
+
 
 if __name__ == "__main__":
     asyncio.run(main())

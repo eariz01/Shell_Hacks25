@@ -1,0 +1,37 @@
+{
+  "recommendations": [
+    {
+      "card_id": "8",
+      "name": "Savor Rewards",
+      "net_rewards": 316.85,
+      "total_savings": 516.85,
+      "reason": [
+        "Reason #1: This card stands out due to its excellent rewards on dining, groceries, and entertainment/streaming services, aligning well with your frequent spending in these categories.",
+        "Reason #2: The Savor Rewards card offers a higher rewards rate in key spending categories compared to other cashback cards, resulting in higher net rewards.",
+        "Reason #3: With a $200 cash bonus after spending $500 in the first 3 months and an additional $100 travel credit in the first year, this card provides immediate value."
+      ]
+    },
+    {
+      "card_id": "12",
+      "name": "SavorOne Rewards for Students",
+      "net_rewards": 256.85,
+      "total_savings": 306.85,
+      "reason": [
+        "Reason #1: The SavorOne Rewards for Students card is a great match because it offers substantial rewards on dining, groceries, and entertainment/streaming, which are significant parts of your spending profile.",
+        "Reason #2: This card excels in its category due to the combination of high rewards rates in relevant categories, no annual fee, and a sign-up bonus.",
+        "Reason #3: Its rewards structure encourages spending in everyday categories, making it a practical choice for students seeking to maximize their cashback earnings without the burden of an annual fee."
+      ]
+    },
+    {
+      "card_id": "6",
+      "name": "Quicksilver Rewards",
+      "net_rewards": 134.57,
+      "total_savings": 334.57,
+      "reason": [
+        "Reason #1: With a flat 1.5% cashback on all purchases, this card is a strong choice because it simplifies your rewards earning and provides consistent value across all spending categories.",
+        "Reason #2: The Quicksilver Rewards card stands out due to its straightforward rewards structure and the added benefit of a signup bonus which allows it to outperform other cards.",
+        "Reason #3: The Quicksilver card is an ideal choice to enhance rewards on purchases that do not fall under any bonus categories"
+      ]
+    }
+  ]
+}
