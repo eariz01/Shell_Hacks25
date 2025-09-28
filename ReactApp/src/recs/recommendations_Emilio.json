@@ -1,0 +1,37 @@
+{
+  "recommendations": [
+    {
+      "card_id": "8",
+      "name": "Savor Rewards",
+      "net_rewards": 54.22,
+      "total_savings": 254.22,
+      "reason": [
+        "Reason #1: This card offers 3% cash back on dining, groceries, entertainment, and streaming, which aligns well with your frequent spending in these categories.",
+        "Reason #2: With a net reward of $54.22 and a signup bonus of $200, this card provides significant value, outperforming other cards with lower rewards or no signup bonus.",
+        "Reason #3: This card is a great fit since it will maximize your returns on common purchases like groceries and entertainment, which can help you save more each month."
+      ]
+    },
+    {
+      "card_id": "12",
+      "name": "SavorOne Rewards for Students",
+      "net_rewards": 54.22,
+      "total_savings": 104.22,
+      "reason": [
+        "Reason #1: Given your spending habits across dining, groceries, entertainment/streaming, the SavorOne card for students is well aligned, with its 3% cash back in these categories.",
+        "Reason #2: Despite not being a student, this card ranks highly because its strong rewards program outweighs the annual fee charged by other cards, and its signup bonus sweetens the deal.",
+        "Reason #3: This card enhances your student lifestyle by rewarding purchases in categories like dining and streaming, which are common for students."
+      ]
+    },
+    {
+      "card_id": "6",
+      "name": "Quicksilver Rewards",
+      "net_rewards": 27.11,
+      "total_savings": 227.11,
+      "reason": [
+        "Reason #1: This card offers a flat 1.5% cash back on all purchases, providing a consistent reward rate for your spending across various categories.",
+        "Reason #2: Offering a $200 signup bonus, this card significantly increases your savings in the first year, despite lower rewards on common categories such as dining, when compared to Savor.",
+        "Reason #3: This card is beneficial because its straightforward rewards program simplifies your financial tracking while still providing value."
+      ]
+    }
+  ]
+}

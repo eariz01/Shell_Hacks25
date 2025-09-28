@@ -1,0 +1,37 @@
+{
+  "recommendations": [
+    {
+      "card_id": "8",
+      "name": "Savor Rewards",
+      "net_rewards": 40.9,
+      "total_savings": 240.9,
+      "reason": [
+        "Reason #1: This card offers a high rewards rate on categories where you spend the most, including dining, grocery stores, and entertainment/streaming.",
+        "Reason #2: Savor Rewards has a notably high rewards rate, providing a significant edge over cards like Quicksilver, which offers a flat 1.5% on all purchases.",
+        "Reason #3: With a $200 signup bonus (after spending $500 in 3 months), this card offers a lucrative head start, especially given your regular spending on core bonus categories."
+      ]
+    },
+    {
+      "card_id": "12",
+      "name": "SavorOne Rewards for Students",
+      "net_rewards": 40.9,
+      "total_savings": 90.9,
+      "reason": [
+        "Reason #1: The SavorOne card for students offers excellent rewards for your spending profile, which includes significant dining, grocery, and entertainment expenses.",
+        "Reason #2: It outperforms basic cashback cards by offering 3% cashback on dining, groceries, and streaming, matching the rewards rate of the original Savor card but without the annual fee.",
+        "Reason #3: The card offers a $50 cash bonus after spending $100 in the first 3 months, making it an accessible and rewarding option for students."
+      ]
+    },
+    {
+      "card_id": "6",
+      "name": "Quicksilver Rewards",
+      "net_rewards": 16.97,
+      "total_savings": 216.97,
+      "reason": [
+        "Reason #1: With a cashback rate of 1.5% on all purchases, this card is a great match for your diverse spending profile, ensuring consistent rewards across all categories.",
+        "Reason #2: While its rewards rate is lower than category-specific cards like SavorOne, its flat rate on all purchases makes it preferable to cards with lower overall returns, given your spending habits.",
+        "Reason #3: The card's $200 bonus after spending $500 in 3 months provides immediate value, and is easy to achieve given your average spending."
+      ]
+    }
+  ]
+}
