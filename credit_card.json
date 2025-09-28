@@ -1,5 +1,5 @@
-https://www.capitalone.com/credit-cards/compare/
-CARD_CATALOG = [  
+
+[  
     {
         "id": "15",
         "name": "Platinum Secured",
@@ -106,7 +106,7 @@ CARD_CATALOG = [
         "annual_fee": 0,
         "min_credit_score": "Excellent",
         "features": ["Enjoy a $100 credit to use towards flights, stays and rental cars booked through Capital One Travel during your first cardholder year","1.25x-miles", "5x-miles at transfer-partners"],
-        "rewards": {"Dining": 0.015, "Grocery Stores": 0.015, "Retail": 0.015, "Travel": 0.015, "Gas": 0.015, "Entertainment/Streaming": 0.015, "Other": 0.015},
+        "rewards": {"Dining": 0.015, "Grocery Stores": 0.015, "Retail": 0.015, "Travel": 0.015, "Gas": 0.015, "Entertainment/Streaming": 0.015, "Other": 0.015}
     },
     {
         "id": "3",
@@ -115,7 +115,7 @@ CARD_CATALOG = [
         "annual_fee": 95,
         "min_credit_score": "Good-Excellent",
         "features": ["Earn 75,000 bonus miles once you spend $4,000 on purchases within the first 3 months from account opening 2","2 miles per dollar spent", "5 miles per dollar on hotels and rental cars booked through Capital One Travel"],
-        "rewards": {"Dining": 0.02, "Grocery Stores": 0.02, "Retail": 0.02, "Travel": 0.02, "Gas": 0.02, "Entertainment/Streaming": 0.02, "Other": 0.02},
+        "rewards": {"Dining": 0.02, "Grocery Stores": 0.02, "Retail": 0.02, "Travel": 0.02, "Gas": 0.02, "Entertainment/Streaming": 0.02, "Other": 0.02}
     },
     {
         "id": "2",
@@ -124,7 +124,7 @@ CARD_CATALOG = [
         "annual_fee": 395,
         "min_credit_score": "Excellent",
         "features": ["Earn 75,000 bonus miles once you spend $4,000 on purchases within the first 3 months from account opening","10x miles on hotels and rental booked through Capital One Travel","5x miles on flights and vacations booked through Capital One travel","lounge-access", "travel-credits", "2x-miles"],
-        "rewards": {"Dining": 0.02, "Grocery Stores": 0.02, "Retail": 0.02, "Travel": 0.02, "Gas": 0.02, "Entertainment/Streaming": 0.02, "Other": 0.02},
+        "rewards": {"Dining": 0.02, "Grocery Stores": 0.02, "Retail": 0.02, "Travel": 0.02, "Gas": 0.02, "Entertainment/Streaming": 0.02, "Other": 0.02}
     },
     {
         "id": "1",
@@ -133,6 +133,6 @@ CARD_CATALOG = [
         "annual_fee": 0,
         "min_credit_score": "Fair",
         "features": ["credit-builder"],
-        "rewards": {"Dining": 0.0, "Grocery Stores": 0.0, "Retail": 0.0, "Travel": 0.0, "Gas": 0.0, "Entertainment/Streaming": 0.0, "Other": 0.0},
-    },  
+        "rewards": {"Dining": 0.0, "Grocery Stores": 0.0, "Retail": 0.0, "Travel": 0.0, "Gas": 0.0, "Entertainment/Streaming": 0.0, "Other": 0.0}
+    } 
 ]

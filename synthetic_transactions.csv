@@ -1,0 +1,157 @@
+transactionId,accountId,accountType,date,amount,currency,merchantName,mcc,merchantCategory,type,description,isRecurring
+c2a03574-67ca-4533-80a6-d8c5e5bc3d29,acct-2,credit_card,2025-04-01T10:59:03,10.27,USD,Spotify,4899,Entertainment/Streaming,debit,Spotify Entertainment/Streaming,False
+48a91c39-be47-4f0c-af2a-43d6648084ca,acct-2,credit_card,2025-04-02T23:52:09,8.51,USD,Netflix,4899,Entertainment/Streaming,debit,Netflix Entertainment/Streaming,False
+c1fd9f1b-8fc9-42a3-a053-ea5208b1a8da,acct-3,checking,2025-04-03T17:01:09,13.71,USD,Spotify,4899,Entertainment/Streaming,debit,Spotify Entertainment/Streaming payment,True
+d1a26d3c-f346-47f4-9d08-76520fe4608c,acct-2,credit_card,2025-04-03T17:58:45,23.74,USD,Uber,4121,Travel,debit,Uber Travel,False
+f7e6a98a-99ac-49fc-80ed-efe436fc0f02,acct-1,checking,2025-04-05T13:16:56,36.76,USD,Kroger,5411,Grocery Stores,debit,Kroger Grocery Stores,False
+7c2fe227-758c-4668-9d68-fe5f7725e226,acct-1,checking,2025-04-11T01:11:37,9.47,USD,Chipotle,5814,Dining,debit,Chipotle Dining,False
+d5031610-b0f5-4585-bd7b-f9f5ae01fd02,acct-1,checking,2025-04-11T21:59:29,78.69,USD,Chevron,5541,Gas,debit,Chevron Gas,False
+b753874c-a47e-4321-b44c-82d1a88cee43,acct-3,checking,2025-04-16T11:26:46,11.34,USD,Chipotle,5814,Dining,debit,Chipotle Dining,False
+2c1145d9-d811-4acd-93c5-9a4739f98a05,acct-3,checking,2025-04-17T20:38:45,670.12,USD,Best Buy,5732,Retail,debit,Best Buy Retail,False
+21fcbecb-d220-4ec8-95b7-fd14e31e2cf3,acct-3,checking,2025-04-18T12:50:59,113.58,USD,Kroger,5411,Grocery Stores,debit,Kroger Grocery Stores,False
+fa442408-1a78-4e6a-9c5d-acb80b426ea6,acct-2,credit_card,2025-04-19T12:36:03,23.21,USD,Shell Oil,5541,Gas,debit,Shell Oil Gas,False
+717fbfd6-c907-4fe8-a632-7e271329545c,acct-3,checking,2025-04-19T17:04:29,11.93,USD,Netflix,4899,Entertainment/Streaming,debit,Netflix Entertainment/Streaming payment,True
+3fb981fd-3882-46a8-b006-87581d55f6c7,acct-1,checking,2025-04-23T10:50:40,777.1,USD,Best Buy,5732,Retail,debit,Best Buy Retail,False
+67cc71d3-1787-4292-8bcb-35a42ae3ab69,acct-1,checking,2025-04-23T14:19:48,30.56,USD,Lyft,4121,Travel,debit,Lyft Travel,False
+910cf67e-d6e0-405e-905b-5c99b4fe3ef4,acct-3,checking,2025-04-25T19:03:52,43.37,USD,Walmart,5411,Grocery Stores,debit,Walmart Grocery Stores,False
+9918fc7d-6806-4c6b-8c0b-46b370ec7dac,acct-1,checking,2025-04-26T00:42:53,14.84,USD,Spotify,4899,Entertainment/Streaming,debit,Spotify Entertainment/Streaming,False
+2042d04d-b75e-4403-a83b-2a6b6243270d,acct-1,checking,2025-04-27T22:47:21,25.33,USD,Walmart,5411,Grocery Stores,debit,Walmart Grocery Stores,False
+03c4272f-7cac-413e-83b3-fec9526a0524,acct-2,credit_card,2025-05-02T13:47:18,59.33,USD,Lyft,4121,Travel,debit,Lyft Travel,False
+43c0bd05-ba63-4e4d-a5e0-a9239b577095,acct-3,checking,2025-05-04T01:01:29,11.12,USD,Spotify,4899,Entertainment/Streaming,debit,Spotify Entertainment/Streaming payment,True
+b4692140-e1a8-4e4f-9ba7-a2550e4dcf99,acct-1,checking,2025-05-07T13:23:33,69.29,USD,Kroger,5411,Grocery Stores,debit,Kroger Grocery Stores,False
+9c9b41ae-2a9a-4231-b344-55a5c5f78016,acct-2,credit_card,2025-05-07T19:59:21,7.3,USD,Starbucks,5814,Dining,debit,Starbucks Dining,False
+d1c177e2-c6d9-4ff8-8ba0-e54dded5fa7e,acct-3,checking,2025-05-09T03:18:30,28.25,USD,Whole Foods Market,5411,Grocery Stores,debit,Whole Foods Market Grocery Stores,False
+e149d971-11ef-4285-9ce8-64c0b96e5abf,acct-3,checking,2025-05-09T22:33:17,117.38,USD,Kroger,5411,Grocery Stores,debit,Kroger Grocery Stores,False
+4f656e2c-8565-4234-b69d-51229a962ac2,acct-1,checking,2025-05-10T11:50:57,88.98,USD,Walmart,5411,Grocery Stores,debit,Walmart Grocery Stores,False
+1a084125-5872-4f17-88ed-be001a45bd05,acct-1,checking,2025-05-11T08:30:39,10.01,USD,Spotify,4899,Entertainment/Streaming,debit,Spotify Entertainment/Streaming,False
+a9f45876-37f9-45c7-a534-5d800fe8723e,acct-1,checking,2025-05-11T13:46:23,174.33,USD,Marriott Hotels,7011,Travel,debit,Marriott Hotels Travel,False
+933c30bc-1d70-4c6b-afe0-180a5bcef391,acct-3,checking,2025-05-11T13:48:15,438.58,USD,United Airlines,4511,Travel,debit,United Airlines Travel,False
+6e19ba37-8935-48c8-9652-428de7301e09,acct-2,credit_card,2025-05-12T18:14:36,27.06,USD,Uber,4121,Travel,debit,Uber Travel,False
+68730407-0459-4293-89e3-4ccc5b2ce98b,acct-2,credit_card,2025-05-12T22:04:16,61.67,USD,BP,5541,Gas,debit,BP Gas,False
+3f710a57-787e-40ff-a806-53638770d082,acct-2,credit_card,2025-05-13T08:40:29,738.05,USD,Delta Air Lines,4511,Travel,debit,Delta Air Lines Travel,False
+50f70974-f877-4db2-921e-db7958715bc2,acct-2,credit_card,2025-05-15T13:25:11,9.95,USD,Hulu,4899,Entertainment/Streaming,debit,Hulu Entertainment/Streaming,False
+7c719bbd-9371-44ed-8217-a62c5574aaa9,acct-1,checking,2025-05-15T18:05:37,32.83,USD,ExxonMobil,5541,Gas,debit,ExxonMobil Gas,False
+61c97cea-2a4e-4a38-84c7-625fdd36d3f6,acct-2,credit_card,2025-05-16T04:41:40,300.3,USD,Amazon,5942,Retail,credit,Amazon Retail,False
+7a819401-84c5-46d3-984c-182f14ce949c,acct-1,checking,2025-05-19T22:50:58,60.73,USD,BP,5541,Gas,debit,BP Gas,False
+a7fb319a-facc-46ca-80f1-0442d5c8648e,acct-1,checking,2025-05-20T11:12:36,37.43,USD,Uber,4121,Travel,debit,Uber Travel,False
+d43578a3-9470-44df-94fe-6f512b363aa2,acct-3,checking,2025-05-20T15:46:12,12.91,USD,Netflix,4899,Entertainment/Streaming,debit,Netflix Entertainment/Streaming payment,True
+0c171ee0-6dbd-4d4b-b7df-f6119fa8ef35,acct-2,credit_card,2025-05-24T08:11:36,10.26,USD,Netflix,4899,Entertainment/Streaming,debit,Netflix Entertainment/Streaming,False
+8501db99-76c0-4102-a7e9-72a956ce83b5,acct-3,checking,2025-05-24T14:17:11,57.12,USD,ExxonMobil,5541,Gas,debit,ExxonMobil Gas,False
+3eb80f1a-6e90-4b8c-884c-182a740f5431,acct-2,credit_card,2025-05-25T02:10:02,440.76,USD,Amazon,5942,Retail,debit,Amazon Retail,False
+112baae4-72c5-4e34-adbf-a296fa8c3b44,acct-2,credit_card,2025-05-25T07:27:26,391.54,USD,Best Buy,5732,Retail,debit,Best Buy Retail,False
+508c3564-5829-4a83-a2d5-64e25188a196,acct-2,credit_card,2025-05-27T04:20:48,19.37,USD,Amazon,5942,Retail,debit,Amazon Retail,False
+79cbb083-b5b0-41be-9d4e-954a6135f427,acct-2,credit_card,2025-05-27T17:14:18,17.62,USD,Chevron,5541,Gas,debit,Chevron Gas,False
+7299ee9b-e2ae-4a55-b28e-2265c25fc0b4,acct-3,checking,2025-05-29T12:45:32,84.86,USD,Best Buy,5732,Retail,debit,Best Buy Retail,False
+80907f39-71c9-46db-aeee-d42bcfde0904,acct-3,checking,2025-05-30T17:47:28,26.21,USD,Kroger,5411,Grocery Stores,debit,Kroger Grocery Stores,False
+a390229f-f8dc-44c7-a1a0-c6fa99d1bb15,acct-1,checking,2025-06-01T20:30:57,59.48,USD,Chevron,5541,Gas,debit,Chevron Gas,False
+b7353939-d09e-46c7-8850-217b820e3ea6,acct-3,checking,2025-06-02T07:11:52,8.51,USD,Disney+,4899,Entertainment/Streaming,debit,Disney+ Entertainment/Streaming,False
+f4d20e8c-1136-4fa1-bad0-410d7421f9ea,acct-3,checking,2025-06-02T19:50:25,13.38,USD,Spotify,4899,Entertainment/Streaming,debit,Spotify Entertainment/Streaming payment,True
+d8c1a307-521f-4ba9-9267-9c3c469c98f6,acct-1,checking,2025-06-03T09:21:01,4.19,USD,Starbucks,5814,Dining,debit,Starbucks Dining,False
+9b1a63ef-adea-47df-b429-f2aa6aa5678c,acct-2,credit_card,2025-06-03T13:21:34,10.93,USD,Chipotle,5814,Dining,debit,Chipotle Dining,False
+8051d914-d5a5-484c-bd60-0067f63e294e,acct-3,checking,2025-06-04T04:51:01,34.67,USD,Uber,4121,Travel,credit,Uber Travel,False
+351b3e03-cc31-4a28-be41-12f96a86f56f,acct-3,checking,2025-06-04T10:00:45,8.59,USD,Uber,4121,Travel,debit,Uber Travel,False
+6b1c4adc-2527-487b-b47e-e1445e586b52,acct-1,checking,2025-06-04T13:03:03,101.96,USD,Kroger,5411,Grocery Stores,debit,Kroger Grocery Stores,False
+e0ab497a-139d-4b1e-a081-bce87b15f8f9,acct-1,checking,2025-06-05T11:42:46,844.18,USD,United Airlines,4511,Travel,credit,United Airlines Travel,False
+84936a03-9021-4e7b-84c8-418ce6a86362,acct-2,credit_card,2025-06-06T18:44:59,40.15,USD,Shell Oil,5541,Gas,debit,Shell Oil Gas,False
+3b87ffbc-773d-427f-a68d-b943b6e721f8,acct-1,checking,2025-06-07T02:22:01,7.4,USD,Panera Bread,5814,Dining,debit,Panera Bread Dining,False
+a6eb3ba3-ff54-41e1-80d4-ff4a8f69e886,acct-2,credit_card,2025-06-09T06:03:16,10.75,USD,Spotify,4899,Entertainment/Streaming,debit,Spotify Entertainment/Streaming,False
+8212ec65-957b-4a9b-a645-267faf76b67e,acct-2,credit_card,2025-06-11T12:08:43,11.03,USD,McDonald's,5814,Dining,debit,McDonald's Dining,False
+561274a9-537f-4368-bdd2-a7e693aba794,acct-1,checking,2025-06-12T15:55:08,13.06,USD,Spotify,4899,Entertainment/Streaming,debit,Spotify Entertainment/Streaming,False
+696c4845-c7f3-4474-94b2-7976933d51b7,acct-2,credit_card,2025-06-13T08:40:05,562.57,USD,Delta Air Lines,4511,Travel,debit,Delta Air Lines Travel,False
+38ba2097-e925-4287-b072-19569fca2cfc,acct-2,credit_card,2025-06-13T09:49:39,48.35,USD,BP,5541,Gas,debit,BP Gas,False
+89e5a115-0306-4d9a-91b9-5534793acc21,acct-2,credit_card,2025-06-15T01:41:53,44.72,USD,Lyft,4121,Travel,credit,Lyft Travel,False
+53146e3a-aa81-492a-a846-bc87c833a9a0,acct-2,credit_card,2025-06-16T02:52:23,37.13,USD,Shell Oil,5541,Gas,debit,Shell Oil Gas,False
+8cdcc9de-b689-4cfa-818b-f0557cc44a82,acct-3,checking,2025-06-16T14:04:20,700.98,USD,United Airlines,4511,Travel,debit,United Airlines Travel,False
+5509c2a2-4856-4b9b-941b-e47041561885,acct-3,checking,2025-06-16T14:18:16,615.77,USD,United Airlines,4511,Travel,debit,United Airlines Travel,False
+03f5ab27-547e-41f7-b2de-f8af18e16a95,acct-1,checking,2025-06-17T14:11:02,94.09,USD,Kroger,5411,Grocery Stores,debit,Kroger Grocery Stores,False
+a5d9fc2b-0146-41f2-9c02-4e9c9f721f1a,acct-1,checking,2025-06-17T19:13:37,114.16,USD,Kroger,5411,Grocery Stores,debit,Kroger Grocery Stores,False
+eaac1578-813c-4e44-b10f-31e227336f41,acct-1,checking,2025-06-19T05:46:23,5.88,USD,Starbucks,5814,Dining,debit,Starbucks Dining,False
+ccb65f6f-34aa-452d-a58c-38a0b52ce9a0,acct-3,checking,2025-06-19T07:22:58,9.54,USD,Netflix,4899,Entertainment/Streaming,debit,Netflix Entertainment/Streaming payment,True
+6d27bc0c-9ab8-4b06-b4c7-1c0c350d47a9,acct-2,credit_card,2025-06-19T23:01:45,459.8,USD,Marriott Hotels,7011,Travel,debit,Marriott Hotels Travel,False
+0aa3e15d-1862-4df6-884c-cc95738ee99e,acct-1,checking,2025-06-20T08:48:53,55.3,USD,Uber,4121,Travel,debit,Uber Travel,False
+0dbf2256-7fd5-4be3-973c-2402508083d5,acct-3,checking,2025-06-21T10:29:13,44.56,USD,Lyft,4121,Travel,debit,Lyft Travel,False
+73b58b9b-2dad-4b9a-a33c-4acc353a096a,acct-2,credit_card,2025-06-23T20:30:05,18.83,USD,Lyft,4121,Travel,debit,Lyft Travel,False
+481981ca-7a29-4916-91dc-e1d478684ba8,acct-1,checking,2025-06-24T15:27:51,6.95,USD,McDonald's,5814,Dining,debit,McDonald's Dining,False
+e6b70a5a-70b4-45d5-bdd7-5ab971a769e8,acct-1,checking,2025-06-25T10:08:53,8.97,USD,Panera Bread,5814,Dining,debit,Panera Bread Dining,False
+33ae675c-bec9-45c6-aa48-8a9e591a6cf3,acct-1,checking,2025-06-25T18:41:36,11.1,USD,Spotify,4899,Entertainment/Streaming,debit,Spotify Entertainment/Streaming,False
+734dee99-1dd3-4869-ae4d-a0a4e0539140,acct-1,checking,2025-06-26T19:29:07,53.81,USD,Walmart,5411,Grocery Stores,debit,Walmart Grocery Stores,False
+a54d9553-d1ff-470e-b2c5-67f4ed27af28,acct-1,checking,2025-06-29T06:36:58,82.6,USD,Kroger,5411,Grocery Stores,debit,Kroger Grocery Stores,False
+56490a78-e91a-4f94-b4ae-54a8bc6bbbb6,acct-3,checking,2025-07-03T11:57:53,10.43,USD,Spotify,4899,Entertainment/Streaming,debit,Spotify Entertainment/Streaming payment,True
+6b8e36ee-55c5-42b2-8f82-b35ed207d769,acct-2,credit_card,2025-07-04T12:08:51,498.65,USD,Marriott Hotels,7011,Travel,debit,Marriott Hotels Travel,False
+d3629ec1-4396-4f2a-9dfe-10230969ee55,acct-2,credit_card,2025-07-04T18:26:23,199.16,USD,Marriott Hotels,7011,Travel,debit,Marriott Hotels Travel,False
+83f1870c-9706-4350-804d-da3243b56726,acct-1,checking,2025-07-07T05:02:37,9.14,USD,Hulu,4899,Entertainment/Streaming,debit,Hulu Entertainment/Streaming,False
+b5a66661-b300-43e0-80e5-583aad6fddb3,acct-1,checking,2025-07-07T08:50:08,487.17,USD,Macy's,5311,Retail,debit,Macy's Retail,False
+897f8dd0-2b75-4e39-868b-9e4bb8d1e7c4,acct-3,checking,2025-07-07T08:52:03,49.91,USD,Uber,4121,Travel,debit,Uber Travel,False
+59646184-346f-43f5-8cb2-56896a4b74f9,acct-3,checking,2025-07-11T14:56:44,105.14,USD,Walmart,5411,Grocery Stores,debit,Walmart Grocery Stores,False
+4c64fb26-df79-4fb2-b31f-6cf99a14bb92,acct-1,checking,2025-07-15T07:05:55,61.94,USD,BP,5541,Gas,debit,BP Gas,False
+3ec23f0c-8a32-45a7-97d4-f67dc1dc8e26,acct-1,checking,2025-07-18T01:10:53,18.26,USD,ExxonMobil,5541,Gas,debit,ExxonMobil Gas,False
+e44d2a96-ec71-4a10-8d18-dffa147f24c8,acct-3,checking,2025-07-18T21:08:42,897.99,USD,Delta Air Lines,4511,Travel,debit,Delta Air Lines Travel,False
+e63e0fe1-a10b-416a-a36b-c97f0198519d,acct-3,checking,2025-07-19T09:23:27,10.8,USD,Spotify,4899,Entertainment/Streaming,debit,Spotify Entertainment/Streaming,False
+6dc3157d-6ee8-4197-ba23-f4ad1eb4602a,acct-3,checking,2025-07-19T13:33:47,9.95,USD,Netflix,4899,Entertainment/Streaming,debit,Netflix Entertainment/Streaming payment,True
+e980c047-cbde-4864-822e-6090e054ac79,acct-3,checking,2025-07-19T21:40:43,11.22,USD,Hulu,4899,Entertainment/Streaming,debit,Hulu Entertainment/Streaming,False
+f1ca83fe-e736-49a1-90c2-0d4132195481,acct-2,credit_card,2025-07-21T06:58:34,30.85,USD,Uber,4121,Travel,debit,Uber Travel,False
+e028a442-959f-431a-b0a9-ab14fd70ac94,acct-1,checking,2025-07-21T11:42:10,208.03,USD,Marriott Hotels,7011,Travel,debit,Marriott Hotels Travel,False
+5c99441b-b166-4d7a-bdde-1299a5030cb4,acct-1,checking,2025-07-22T14:05:20,13.14,USD,Chipotle,5814,Dining,debit,Chipotle Dining,False
+c3de2d84-2c48-42aa-b874-925760718d60,acct-2,credit_card,2025-07-22T21:32:07,233.91,USD,United Airlines,4511,Travel,debit,United Airlines Travel,False
+99ac8e29-e835-4dc0-b1b1-23ccadb65fc8,acct-3,checking,2025-07-22T22:17:12,460.47,USD,Marriott Hotels,7011,Travel,debit,Marriott Hotels Travel,False
+53127e1f-7d31-4aa4-8299-fa6a6b6c7a8d,acct-1,checking,2025-07-25T11:05:18,40.5,USD,Kroger,5411,Grocery Stores,debit,Kroger Grocery Stores,False
+efcb6385-9e1b-44be-9858-967d80ce63e1,acct-2,credit_card,2025-07-28T20:16:45,10.06,USD,Spotify,4899,Entertainment/Streaming,debit,Spotify Entertainment/Streaming,False
+658db78d-e5ee-4bed-89c1-942b2b553241,acct-2,credit_card,2025-07-29T13:22:27,61.47,USD,Walmart,5411,Grocery Stores,debit,Walmart Grocery Stores,False
+b3e4ac5e-e962-486e-b1cf-81cfbf756ac4,acct-2,credit_card,2025-08-02T01:02:48,34.34,USD,BP,5541,Gas,debit,BP Gas,False
+06ec21d5-f249-4c10-9d8b-3560cf2e86ad,acct-3,checking,2025-08-02T07:28:13,10.16,USD,Spotify,4899,Entertainment/Streaming,debit,Spotify Entertainment/Streaming payment,True
+c3e71da5-d461-40e8-8389-6b71caecf5d0,acct-2,credit_card,2025-08-03T00:38:46,358.2,USD,Amazon,5942,Retail,debit,Amazon Retail,False
+415f9a15-9366-4a08-84d9-a15eed283ace,acct-3,checking,2025-08-03T09:24:47,23.17,USD,Chevron,5541,Gas,debit,Chevron Gas,False
+6686decb-c14a-4c3b-92e7-d634c9ab30a3,acct-3,checking,2025-08-07T02:58:28,448.21,USD,Marriott Hotels,7011,Travel,debit,Marriott Hotels Travel,False
+5c47c2ce-bf2a-480f-a47f-b96d1a64b862,acct-2,credit_card,2025-08-07T19:57:04,7.11,USD,Starbucks,5814,Dining,debit,Starbucks Dining,False
+bb97608e-5100-4fab-b868-d39da8663d85,acct-2,credit_card,2025-08-08T02:10:56,10.97,USD,Chipotle,5814,Dining,debit,Chipotle Dining,False
+a756095d-ceb3-408e-bb77-39a1695363f0,acct-1,checking,2025-08-08T05:33:45,529.37,USD,Macy's,5311,Retail,debit,Macy's Retail,False
+9234d1ae-08e2-4008-ae1c-a89ede8b2cb2,acct-2,credit_card,2025-08-09T01:37:08,10.14,USD,Spotify,4899,Entertainment/Streaming,debit,Spotify Entertainment/Streaming,False
+56bb35da-7fb5-4a8c-bd36-107e59649aae,acct-2,credit_card,2025-08-09T14:57:11,22.13,USD,Chevron,5541,Gas,credit,Chevron Gas,False
+2908709d-dcdf-4e49-b9d4-8af84de63582,acct-1,checking,2025-08-10T12:53:58,44.66,USD,Shell Oil,5541,Gas,debit,Shell Oil Gas,False
+f4e6697a-2538-4aa8-8aa9-1d7ef1215d92,acct-1,checking,2025-08-13T20:59:52,13.32,USD,Spotify,4899,Entertainment/Streaming,debit,Spotify Entertainment/Streaming,False
+ea0143ce-5f37-45fc-84bf-751157a73663,acct-3,checking,2025-08-14T05:19:27,8.14,USD,Disney+,4899,Entertainment/Streaming,debit,Disney+ Entertainment/Streaming,False
+cb91032f-bc0c-4cad-a20c-f9912076528f,acct-1,checking,2025-08-16T14:59:48,369.88,USD,Delta Air Lines,4511,Travel,debit,Delta Air Lines Travel,False
+61ad89c7-feb7-45b7-9135-bfdcb42aa17b,acct-3,checking,2025-08-17T15:46:11,35.26,USD,ExxonMobil,5541,Gas,debit,ExxonMobil Gas,False
+01254617-1348-4a4b-9c44-e2e302c22080,acct-3,checking,2025-08-17T16:20:42,13.31,USD,Netflix,4899,Entertainment/Streaming,debit,Netflix Entertainment/Streaming payment,True
+dd5b277a-56e4-42f9-80ae-dacf3d3ba3e6,acct-1,checking,2025-08-17T20:44:55,101.63,USD,Macy's,5311,Retail,debit,Macy's Retail,False
+7082d12e-9baa-4f63-bc14-82923adbe40b,acct-1,checking,2025-08-18T23:49:11,269.26,USD,Marriott Hotels,7011,Travel,debit,Marriott Hotels Travel,False
+79ccf81c-7e1b-4562-91e9-5efadef945f1,acct-1,checking,2025-08-19T19:50:37,92.81,USD,Whole Foods Market,5411,Grocery Stores,debit,Whole Foods Market Grocery Stores,False
+f53d9d39-bd2f-42bd-80da-667fc23d6bc2,acct-1,checking,2025-08-19T22:26:41,434.36,USD,United Airlines,4511,Travel,debit,United Airlines Travel,False
+cacfa128-57bf-4455-9b37-8d9bdec46a5d,acct-3,checking,2025-08-21T08:25:34,61.27,USD,ExxonMobil,5541,Gas,debit,ExxonMobil Gas,False
+f8dc28f8-5c5b-4f89-a3c6-c244bb0bffee,acct-1,checking,2025-08-21T09:53:49,109.41,USD,Walmart,5411,Grocery Stores,debit,Walmart Grocery Stores,False
+21b412c8-e04f-40f2-9c98-e641e2f1bdf5,acct-3,checking,2025-08-22T18:37:09,401.99,USD,Macy's,5311,Retail,debit,Macy's Retail,False
+489e32d4-cabc-408e-aa11-6d1d13ced390,acct-2,credit_card,2025-08-23T00:47:56,359.51,USD,Amazon,5942,Retail,debit,Amazon Retail,False
+c8015cd1-9de2-4a89-80c4-1536e84975a2,acct-2,credit_card,2025-08-25T19:38:15,15.47,USD,Uber,4121,Travel,debit,Uber Travel,False
+e4fc019a-2aa9-4324-a146-0478a03f69db,acct-3,checking,2025-08-28T17:34:24,32.52,USD,Chevron,5541,Gas,debit,Chevron Gas,False
+12afaa4c-b325-48f0-abc4-09d2d19e1de0,acct-2,credit_card,2025-08-29T15:41:17,83.96,USD,Walmart,5411,Grocery Stores,debit,Walmart Grocery Stores,False
+3a6aba72-a92c-43d7-9cf6-dad420cdd895,acct-1,checking,2025-08-31T05:14:52,8.67,USD,Panera Bread,5814,Dining,debit,Panera Bread Dining,False
+fd18186b-296e-4ec1-95fa-94e3afcac204,acct-3,checking,2025-08-31T08:13:39,51.84,USD,Kroger,5411,Grocery Stores,debit,Kroger Grocery Stores,False
+7133278d-9bf9-40d9-b2f4-bdc30fa0ee32,acct-3,checking,2025-08-31T09:10:24,11.07,USD,Netflix,4899,Entertainment/Streaming,debit,Netflix Entertainment/Streaming,False
+67764ac5-1dc0-41d9-9bad-85411884364a,acct-3,checking,2025-08-31T19:31:11,11.09,USD,Spotify,4899,Entertainment/Streaming,debit,Spotify Entertainment/Streaming payment,True
+be08dc80-4723-4298-b57d-fc0c8a6b5b3d,acct-1,checking,2025-09-02T01:43:11,641.55,USD,Best Buy,5732,Retail,debit,Best Buy Retail,False
+e61a19d4-5748-4db3-ab22-d026fa01371d,acct-2,credit_card,2025-09-05T02:33:17,150.3,USD,Delta Air Lines,4511,Travel,debit,Delta Air Lines Travel,False
+94ce5356-2ea9-4ffd-8153-2e5bb6a4e7dc,acct-3,checking,2025-09-05T17:46:37,427.17,USD,Macy's,5311,Retail,debit,Macy's Retail,False
+84a9b86c-ebb3-4126-b7ec-27a95642daee,acct-2,credit_card,2025-09-06T19:09:54,647.25,USD,Delta Air Lines,4511,Travel,debit,Delta Air Lines Travel,False
+d9980160-a498-4b90-b461-7bd7c116a212,acct-1,checking,2025-09-08T18:41:18,11.02,USD,McDonald's,5814,Dining,debit,McDonald's Dining,False
+78d60136-3fec-4e6b-b300-23db27df4020,acct-2,credit_card,2025-09-09T00:59:30,47.13,USD,ExxonMobil,5541,Gas,debit,ExxonMobil Gas,False
+8f3b7b9e-7616-4557-b416-23cfd7414461,acct-1,checking,2025-09-10T01:56:13,42.74,USD,BP,5541,Gas,debit,BP Gas,False
+7eb7764a-ca71-4cad-93e3-a9a7e3d1545b,acct-3,checking,2025-09-10T18:08:42,102.71,USD,Kroger,5411,Grocery Stores,debit,Kroger Grocery Stores,False
+7e9f31b0-0b17-41a2-99ed-e3a17f0a09b0,acct-2,credit_card,2025-09-11T11:44:48,115.56,USD,Walmart,5411,Grocery Stores,debit,Walmart Grocery Stores,False
+21d49300-6854-4e11-971b-a0bc7ec17014,acct-2,credit_card,2025-09-12T04:01:37,19.31,USD,Lyft,4121,Travel,debit,Lyft Travel,False
+f187c427-ac65-44fe-b8d2-2c24542030d8,acct-2,credit_card,2025-09-15T18:04:51,797.88,USD,United Airlines,4511,Travel,debit,United Airlines Travel,False
+32fa9ea1-eb09-42c4-8dea-d585d72712c6,acct-1,checking,2025-09-15T19:30:31,347.7,USD,Marriott Hotels,7011,Travel,debit,Marriott Hotels Travel,False
+2224d67a-bc19-4b09-9edf-a569b16c4883,acct-1,checking,2025-09-16T19:47:09,258.04,USD,Target,5311,Retail,debit,Target Retail,False
+f358df68-1c9e-473d-86d4-8a3464a59c2b,acct-3,checking,2025-09-16T21:55:17,12.89,USD,Netflix,4899,Entertainment/Streaming,debit,Netflix Entertainment/Streaming payment,True
+e3b3b8c0-3b90-4c83-ba26-f1abda4be014,acct-1,checking,2025-09-18T14:42:22,71.86,USD,Chevron,5541,Gas,debit,Chevron Gas,False
+92c5abe0-8b29-471d-976d-55daf707fd79,acct-3,checking,2025-09-18T20:02:39,96.61,USD,Kroger,5411,Grocery Stores,debit,Kroger Grocery Stores,False
+9bd4309d-5259-411b-b1b5-66e4e9626d6f,acct-3,checking,2025-09-18T20:45:19,780.38,USD,Delta Air Lines,4511,Travel,debit,Delta Air Lines Travel,False
+d3faf68a-6701-4ad9-9e9a-83a360195fbc,acct-1,checking,2025-09-19T05:32:22,42.16,USD,Walmart,5411,Grocery Stores,debit,Walmart Grocery Stores,False
+522a31bf-385b-488e-aa40-88f04a766a9c,acct-2,credit_card,2025-09-19T09:51:35,4.63,USD,Starbucks,5814,Dining,debit,Starbucks Dining,False
+d0a85232-971d-4e71-9097-78e4c21a1aa1,acct-2,credit_card,2025-09-20T04:27:44,10.82,USD,Hulu,4899,Entertainment/Streaming,debit,Hulu Entertainment/Streaming,False
+e9cd7173-f67d-4362-b9c1-b34c1a5a553b,acct-3,checking,2025-09-21T20:10:12,56.66,USD,Chevron,5541,Gas,debit,Chevron Gas,False
+a747280d-b1cc-47ce-96a5-60a010ec5f80,acct-3,checking,2025-09-23T07:48:42,26.82,USD,BP,5541,Gas,debit,BP Gas,False
+9c11f672-5e3f-409e-aace-361c30f10e5d,acct-2,credit_card,2025-09-24T02:24:07,93.55,USD,Target,5311,Retail,credit,Target Retail,False
+6bc5c76f-5e95-4a5f-ab7e-729b3a94600a,acct-1,checking,2025-09-24T10:05:13,525.35,USD,Delta Air Lines,4511,Travel,debit,Delta Air Lines Travel,False
+73ccecb2-57c5-4380-84f8-443b7d1df911,acct-1,checking,2025-09-25T11:51:52,64.1,USD,Walmart,5411,Grocery Stores,debit,Walmart Grocery Stores,False
+b5eea917-608d-4255-a9c4-f79491494b5e,acct-1,checking,2025-09-26T04:54:56,46.0,USD,Chevron,5541,Gas,debit,Chevron Gas,False
+6bee99ff-a7da-416a-abe1-d500890e7769,acct-3,checking,2025-09-27T14:51:58,11.47,USD,McDonald's,5814,Dining,debit,McDonald's Dining,False
