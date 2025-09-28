@@ -117,9 +117,9 @@ card_agent = LlmAgent(
         "Then produce a final JSON object EXACTLY matching this schema:\n"
         "{\n"
         '  "recommendations": [\n'
-        '    {"card_id": string, "name": string, "net_rewards": number, "reason": string},\n'
-        '    {"card_id": string, "name": string, "net_rewards": number, "reason": string},\n'
-        '    {"card_id": string, "name": string, "net_rewards": number, "reason": string}\n'
+        '    {"card_id": string, "name": string, "net_rewards": number, "total_savings": number, "reason": string},\n'
+        '    {"card_id": string, "name": string, "net_rewards": number, "total_savings": number, "reason": string},\n'
+        '    {"card_id": string, "name": string, "net_rewards": number, "total_savings": number, "reason": string}\n'
         "  ]\n"
         "}\n"
         "When selecting cards, make sure that the cards are not derivatives of eachother"
@@ -131,6 +131,7 @@ card_agent = LlmAgent(
         "Second line of reasoning:  Next, you want to explain its placement within the rankings among the cards, and why it outperforms other cards."
         "Finally, you must add an further justification as to why it is a good fit for the customer, providing the reasons that it will benefit the customers lifestyle"
         "The reasonings for each individual cardmust all be seperated as a list in the format: Reason #X, in which X is a place holder for 1, 2, 3"
+        "The total_savings should be the net_rewards + the signup bonus if the spending-threshold is met"
         "grounded in the spending profile and card features (categories, fees). Do NOT include any extra text—JSON ONLY."
         "Output MUST be raw JSON only (no code fences, no prose, no backticks)."
     ),
@@ -293,3 +294,35 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
+#Probably don't need this so just going to comment for the moment
+
+# # ---------- Load synthetic transactions ----------
+# TRANSACTION_FILE = Path("synthetic_transactions.json")
+# with open(TRANSACTION_FILE, "r", encoding="utf-8") as f:
+#     transactions = json.load(f)
+
+# # ---------- Aggregate spending by category ----------
+# spending_by_category = {}
+# for txn in transactions:
+#     if txn["type"] == "debit":  # only spent amounts
+#         cat = txn["merchantCategory"]
+#         amt = txn["amount"]
+#         spending_by_category[cat] = spending_by_category.get(cat, 0) + amt
+
+
+# card_scores = []
+# for card in CARD_CATALOG:
+#     score = score_card(card, spending_by_category)
+#     card_scores.append((card["name"], score))
+
+# ---------- Recommend top cards ----------
+# card_scores.sort(key=lambda x: x[1], reverse=True)
+
+# print("\n===== Top Credit Card Recommendations =====")
+# for name, expected_rewards in card_scores[:5]:
+#     print(f"{name}: Estimated net rewards ${expected_rewards:.2f}")
+
+# print("\n===== Spending Summary by Category =====")
+# for cat, amt in spending_by_category.items():
+#     print(f"{cat}: ${amt:.2f}")
