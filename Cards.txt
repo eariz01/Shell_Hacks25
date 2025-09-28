@@ -1,0 +1,138 @@
+https://www.capitalone.com/credit-cards/compare/
+CARD_CATALOG = [  
+    {
+        "id": "15",
+        "name": "Platinum Secured",
+        "category": "credit_building",
+        "annual_fee": 0,
+        "min_credit_score": "Rebuilding",
+        "features": ["refundable-deposit-$49-$99-$200", "build-credit", "upgrade-card-with-responsible-use"],
+        "rewards": {"Dining": 0.0, "Grocery Stores": 0.0, "Retail": 0.0, "Travel": 0.0, "Gas": 0.0, "Entertainment/Streaming": 0.0, "Other": 0.0}
+    },
+    {
+        "id": "14",
+        "name": "Quicksilver Secured Rewards",
+        "category": "cashback",
+        "annual_fee": 0,
+        "min_credit_score": "Fair",
+        "features": ["unlimited-1.5pct", "refundable-$200-deposit", "considered-for-higher-credit-line"],
+        "rewards": {"Dining": 0.015, "Grocery Stores": 0.015, "Retail": 0.015, "Travel": 0.015, "Gas": 0.015, "Entertainment/Streaming": 0.015, "Other": 0.015}
+    },
+    {
+        "id": "13",
+        "name": "Quicksilver Rewards for Students",
+        "category": "cashback",
+        "annual_fee": 0,
+        "min_credit_score": "Fair",
+        "features": ["unlimited-1.5pct", "$50 cash bonus after $100 in 3 months"],
+        "rewards": {"Dining": 0.015, "Grocery Stores": 0.015, "Retail": 0.015, "Travel": 0.015, "Gas": 0.015, "Entertainment/Streaming": 0.015, "Other": 0.015}
+    },
+    {
+        "id": "12",
+        "name": "SavorOne Rewards for Students",
+        "category": "cashback",
+        "annual_fee": 0,
+        "min_credit_score": "Fair",
+        "features": ["unlimited-3pct-grocery-dining-entertainment-streaming", "1pct-other", "$50 cash bonus after $100 in 3 months"],
+        "rewards": {"Dining": 0.03, "Grocery Stores": 0.03, "Retail": 0.01, "Travel": 0.01, "Gas": 0.01, "Entertainment/Streaming": 0.03, "Other": 0.01}
+    },
+    {
+        "id": "11",
+        "name": "QuicksilverOne Rewards",
+        "category": "cashback",
+        "annual_fee": 39,
+        "min_credit_score": "Fair",
+        "features": ["unlimited-1.5pct", "considered-for-higher-credit-line"],
+        "rewards": {"Dining": 0.015, "Grocery Stores": 0.015, "Retail": 0.015, "Travel": 0.015, "Gas": 0.015, "Entertainment/Streaming": 0.015, "Other": 0.015}
+    },
+    {
+        "id": "10",
+        "name": "SavorOne Rewards",
+        "category": "cashback",
+        "annual_fee": 39,
+        "min_credit_score": "Fair",
+        "features": ["unlimited-3pct-grocery-dining-entertainment-streaming", "1pct-other", "rewards-never-expire"],
+        "rewards": {"Dining": 0.03, "Grocery Stores": 0.03, "Retail": 0.01, "Travel": 0.01, "Gas": 0.01, "Entertainment/Streaming": 0.03, "Other": 0.01}
+    },
+    {
+        "id": "9",
+        "name": "Savor Rewards for Good Credit",
+        "category": "cashback",
+        "annual_fee": 0,
+        "min_credit_score": "Good",
+        "features": ["unlimited-3pct-grocery-dining-entertainment-streaming", "1pct-other", "no-signup-bonus", "no-intro-apr"],
+        "rewards": {"Dining": 0.03, "Grocery Stores": 0.03, "Retail": 0.01, "Travel": 0.01, "Gas": 0.01, "Entertainment/Streaming": 0.03, "Other": 0.01}
+    },
+    {
+        "id": "8",
+        "name": "Savor Rewards",
+        "category": "cashback",
+        "annual_fee": 0,
+        "min_credit_score": "Excellent",
+        "features": ["$100 travel credit first year", "$200 cash bonus after $500 in 3 months", "unlimited-3pct-grocery-dining-entertainment-streaming", "1pct-other"],
+        "rewards": {"Dining": 0.03, "Grocery Stores": 0.03, "Retail": 0.01, "Travel": 0.01, "Gas": 0.01, "Entertainment/Streaming": 0.03, "Other": 0.01}
+    },
+    {
+        "id": "7",
+        "name": "Quicksilver Rewards for Good Credit",
+        "category": "cashback",
+        "annual_fee": 0,
+        "min_credit_score": "Good",
+        "features": ["unlimited-1.5pct", "no-signup-bonus", "no-intro-apr"],
+        "rewards": {"Dining": 0.015, "Grocery Stores": 0.015, "Retail": 0.015, "Travel": 0.015, "Gas": 0.015, "Entertainment/Streaming": 0.015, "Other": 0.015}
+    },
+    {
+        "id": "6",
+        "name": "Quicksilver Rewards",
+        "category": "cashback",
+        "annual_fee": 0,
+        "min_credit_score": "Excellent",
+        "features": ["$100 travel credit first year", "$200 cash bonus after $500 in 3 months", "unlimited-1.5pct"],
+        "rewards": {"Dining": 0.015, "Grocery Stores": 0.015, "Retail": 0.015, "Travel": 0.015, "Gas": 0.015, "Entertainment/Streaming": 0.015, "Other": 0.015}
+    },
+    {
+        "id": "5",
+        "name": "VentureOne Rewards for Good Credit",
+        "category": "travel",
+        "annual_fee": 0,
+        "min_credit_score": "Good",
+        "features": ["1.25x-miles", "no-bonus-miles", "no-intro-apr"],
+        "rewards": {"Dining": 0.03, "Grocery Stores": 0.02, "Retail": 0.01, "Travel": 0.0125, "Gas": 0.01, "Entertainment/Streaming": 0.03, "Other": 0.01}
+    },
+    {
+        "id": "4",
+        "name": "VentureOne Rewards",
+        "category": "travel",
+        "annual_fee": 0,
+        "min_credit_score": "Excellent",
+        "features": ["Enjoy a $100 credit to use towards flights, stays and rental cars booked through Capital One Travel during your first cardholder year","1.25x-miles", "5x-miles at transfer-partners"],
+        "rewards": {"Dining": 0.015, "Grocery Stores": 0.015, "Retail": 0.015, "Travel": 0.015, "Gas": 0.015, "Entertainment/Streaming": 0.015, "Other": 0.015}
+    },
+    {
+        "id": "3",
+        "name": "Venture Rewards",
+        "category": "travel",
+        "annual_fee": 95,
+        "min_credit_score": "Good-Excellent",
+        "features": ["Earn 75,000 bonus miles once you spend $4,000 on purchases within the first 3 months from account opening 2","2 miles per dollar spent", "5 miles per dollar on hotels and rental cars booked through Capital One Travel"],
+        "rewards": {"Dining": 0.02, "Grocery Stores": 0.02, "Retail": 0.02, "Travel": 0.02, "Gas": 0.02, "Entertainment/Streaming": 0.02, "Other": 0.02}
+    },
+    {
+        "id": "2",
+        "name": "Venture X Rewards",
+        "category": "premium travel",
+        "annual_fee": 395,
+        "min_credit_score": "Excellent",
+        "features": ["Earn 75,000 bonus miles once you spend $4,000 on purchases within the first 3 months from account opening","10x miles on hotels and rental booked through Capital One Travel","5x miles on flights and vacations booked through Capital One travel","lounge-access", "travel-credits", "2x-miles"],
+        "rewards": {"Dining": 0.02, "Grocery Stores": 0.02, "Retail": 0.02, "Travel": 0.02, "Gas": 0.02, "Entertainment/Streaming": 0.02, "Other": 0.02}
+    },
+    {
+        "id": "1",
+        "name": "Platinum Mastercard",
+        "category": "credit-building",
+        "annual_fee": 0,
+        "min_credit_score": "Fair",
+        "features": ["credit-builder"],
+        "rewards": {"Dining": 0.0, "Grocery Stores": 0.0, "Retail": 0.0, "Travel": 0.0, "Gas": 0.0, "Entertainment/Streaming": 0.0, "Other": 0.0}
+    },  
+]

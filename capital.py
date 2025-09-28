@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 """
 generate_synthetic_transactions.py
 
@@ -11,22 +12,35 @@ Usage:
   python generate_synthetic_transactions.py
 """
 
+=======
+>>>>>>> 003eddc1b094243dd596aaf20ca0d84eaf191d4c
 import json
 import random
 import uuid
 from datetime import datetime, timedelta
 from pathlib import Path
 
+<<<<<<< HEAD
 import pandas as pd  # used for easy CSV export
 
 # ---------- Configuration ----------
 NUM_ACCOUNTS = 3
+=======
+import pandas as pd
+
+# ---------- Configuration ----------
+NUM_ACCOUNTS_PER_USER = 3
+USER_NAMES = ["Kyle", "Emilio", "Griffin", "Graham"]
+>>>>>>> 003eddc1b094243dd596aaf20ca0d84eaf191d4c
 DAYS_HISTORY = 180
 AVG_TRANSACTIONS_PER_DAY = 0.8
 START_DATE = datetime.now() - timedelta(days=DAYS_HISTORY)
 CURRENCY = "USD"
+<<<<<<< HEAD
 OUTPUT_JSON = Path("synthetic_transactions.json")
 OUTPUT_CSV = Path("synthetic_transactions.csv")
+=======
+>>>>>>> 003eddc1b094243dd596aaf20ca0d84eaf191d4c
 SEED = 42
 # -----------------------------------
 
@@ -34,44 +48,63 @@ random.seed(SEED)
 
 # ---------- Merchant catalog ----------
 MERCHANT_CATALOG = [
+<<<<<<< HEAD
     # Dining
+=======
+>>>>>>> 003eddc1b094243dd596aaf20ca0d84eaf191d4c
     ("Starbucks", "5814", "Dining", (3, 8), "in-store"),
     ("Chipotle", "5814", "Dining", (8, 15), "in-store"),
     ("McDonald's", "5814", "Dining", (5, 12), "in-store"),
     ("Panera Bread", "5814", "Dining", (6, 15), "in-store"),
+<<<<<<< HEAD
 
     # Grocery Stores
+=======
+>>>>>>> 003eddc1b094243dd596aaf20ca0d84eaf191d4c
     ("Whole Foods Market", "5411", "Grocery Stores", (10, 120), "in-store"),
     ("Trader Joe's", "5411", "Grocery Stores", (10, 100), "in-store"),
     ("Walmart", "5411", "Grocery Stores", (5, 150), "in-store"),
     ("Kroger", "5411", "Grocery Stores", (10, 120), "in-store"),
+<<<<<<< HEAD
 
     # Retail
+=======
+>>>>>>> 003eddc1b094243dd596aaf20ca0d84eaf191d4c
     ("Amazon", "5942", "Retail", (5, 500), "online"),
     ("Target", "5311", "Retail", (10, 300), "in-store"),
     ("Best Buy", "5732", "Retail", (20, 1000), "in-store"),
     ("Macy's", "5311", "Retail", (15, 600), "in-store"),
+<<<<<<< HEAD
 
     # Travel
+=======
+>>>>>>> 003eddc1b094243dd596aaf20ca0d84eaf191d4c
     ("Delta Air Lines", "4511", "Travel", (150, 900), "online"),
     ("United Airlines", "4511", "Travel", (150, 900), "online"),
     ("Lyft", "4121", "Travel", (5, 60), "online"),
     ("Uber", "4121", "Travel", (5, 60), "online"),
     ("Marriott Hotels", "7011", "Travel", (100, 500), "online"),
+<<<<<<< HEAD
 
     # Entertainment/Streaming
+=======
+>>>>>>> 003eddc1b094243dd596aaf20ca0d84eaf191d4c
     ("Spotify", "4899", "Entertainment/Streaming", (10, 15), "recurring"),
     ("Netflix", "4899", "Entertainment/Streaming", (8, 15), "recurring"),
     ("Disney+", "4899", "Entertainment/Streaming", (8, 15), "recurring"),
     ("Hulu", "4899", "Entertainment/Streaming", (8, 15), "recurring"),
+<<<<<<< HEAD
 
     # Gas
+=======
+>>>>>>> 003eddc1b094243dd596aaf20ca0d84eaf191d4c
     ("Shell Oil", "5541", "Gas", (15, 70), "in-store"),
     ("ExxonMobil", "5541", "Gas", (15, 80), "in-store"),
     ("BP", "5541", "Gas", (15, 75), "in-store"),
     ("Chevron", "5541", "Gas", (15, 80), "in-store"),
 ]
 
+<<<<<<< HEAD
 # Recurring items
 RECURRING_ITEMS = [
     ("Spotify", 30),
@@ -79,6 +112,9 @@ RECURRING_ITEMS = [
 ]
 
 # Account types (checking and credit card only)
+=======
+RECURRING_ITEMS = [("Spotify", 30), ("Netflix", 30)]
+>>>>>>> 003eddc1b094243dd596aaf20ca0d84eaf191d4c
 ACCOUNT_TYPES = ["checking", "credit_card"]
 
 # ---------- Helper functions ----------
@@ -93,6 +129,7 @@ def mk_date(n_days_from_start):
     return dt.isoformat(timespec="seconds")
 
 def pick_account(accounts):
+<<<<<<< HEAD
     # only choose checking or credit card
     weights = []
     for acc in accounts:
@@ -100,6 +137,9 @@ def pick_account(accounts):
             weights.append(0.5)
         elif acc["type"] == "credit_card":
             weights.append(0.5)
+=======
+    weights = [0.5 if acc["type"] in ("checking", "credit_card") else 0 for acc in accounts]
+>>>>>>> 003eddc1b094243dd596aaf20ca0d84eaf191d4c
     total = sum(weights)
     r = random.random() * total
     cum = 0
@@ -109,6 +149,7 @@ def pick_account(accounts):
             return accounts[i]
     return accounts[-1]
 
+<<<<<<< HEAD
 # ---------- Generate accounts ----------
 def generate_accounts(n=NUM_ACCOUNTS):
     accounts = []
@@ -118,11 +159,24 @@ def generate_accounts(n=NUM_ACCOUNTS):
             "id": f"acct-{i+1}",
             "type": acc_type,
             "name": f"{acc_type.title()} Account #{i+1}",
+=======
+def generate_accounts(username, n=NUM_ACCOUNTS_PER_USER):
+    accounts = []
+    for i in range(n):
+        acc_type = ACCOUNT_TYPES[i % len(ACCOUNT_TYPES)]
+        accounts.append({
+            "id": f"{username.lower()}-acct-{i+1}",  # account id includes username
+            "type": acc_type,
+            "name": f"{username}'s {acc_type.title()} Account #{i+1}",
+>>>>>>> 003eddc1b094243dd596aaf20ca0d84eaf191d4c
             "currency": CURRENCY
         })
     return accounts
 
+<<<<<<< HEAD
 # ---------- Generate transactions ----------
+=======
+>>>>>>> 003eddc1b094243dd596aaf20ca0d84eaf191d4c
 def generate_transactions_for_customer(accounts):
     transactions = []
 
@@ -181,6 +235,7 @@ def generate_transactions_for_customer(accounts):
     transactions.sort(key=lambda x: x["date"])
     return transactions
 
+<<<<<<< HEAD
 # ---------- Save outputs ----------
 def save_outputs(transactions):
     with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
@@ -204,3 +259,20 @@ if __name__ == "__main__":
     print("\nSample transactions (first 5):")
     for txn in txns[:5]:
         print(json.dumps(txn, indent=2))
+=======
+def save_outputs(transactions, username):
+    json_path = Path(f"synthetic_transactions_{username}.json")
+    csv_path = Path(f"synthetic_transactions_{username}.csv")
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump(transactions, f, indent=2, ensure_ascii=False)
+    pd.DataFrame(transactions).to_csv(csv_path, index=False)
+    print(f"Wrote {len(transactions)} transactions to {json_path} and {csv_path}")
+
+# ---------- Run ----------
+if __name__ == "__main__":
+    for username in USER_NAMES:
+        print(f"\nGenerating data for {username}...")
+        accounts = generate_accounts(username)
+        txns = generate_transactions_for_customer(accounts)
+        save_outputs(txns, username)
+>>>>>>> 003eddc1b094243dd596aaf20ca0d84eaf191d4c
