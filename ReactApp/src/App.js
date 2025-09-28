@@ -1,15 +1,15 @@
-import creditcard from './CardAssets/CapitalOne.png';
-import arrow from './button.png';
 import { cards } from './CardCatalogue';
+import data from "./recs/recommendations_Graham.json";
 import './App.css';
 import { useState } from 'react';
 
 
 function App() {
-  const cardId = ['quicksilver_one', 'savor', 'spark_miles'];
+  const cardId = data.recommendations.map(r => r.card_id);
   const headerText = ['Top Recommendation', 'Great Alternative', 'Final Top Choice'];
   const [index, setIndex] = useState(0);
-  const selectedCard = cards.find(card => card.id == cardId[index]);
+  const item = data.recommendations.find(r => r.card_id === cardId[index]);
+  const selectedCard = cards.find(card => card.id === cardId[index]);
   
 
   const handleNext = () => {
@@ -61,14 +61,16 @@ function App() {
           </h1>
           <div class="glow-container">
             <div class="glow"></div>
-            <img src={creditcard} className="main-image" alt="logo" />
+            <img src={selectedCard.image} className="main-image" alt="logo" />
           </div>
           <h2>
-            {selectedCard.name}
+            {selectedCard.name} 
           </h2>
 
           <p>
-            Credit cards are convenient tools that let you borrow money for purchases and pay it back later, often with added benefits like cash back or travel rewards. Used wisely, they can help build credit and provide financial flexibility. However, carrying a balance or missing payments can lead to high interest charges and harm your credit score. Choosing the right card based on your spending habits and goals can make a big difference in managing your finances effectively.
+            <ul>{item.reason[0]}</ul>
+            <ul>{item.reason[1]}</ul>
+            <ul>{item.reason[2]}</ul>
           </p>
         </div>
 
