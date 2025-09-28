@@ -239,7 +239,7 @@ CARD_CATALOG = [
 
 async def main():
     # 1) Read raw JSON strings (not Python objects)
-    TRANSACTION_FILE = Path("synthetic_transactions.json")
+    TRANSACTION_FILE = Path("synthetic_transactions_Kyle.json")
     transactions_json = TRANSACTION_FILE.read_text(encoding="utf-8")
 
     CARD_FILE = Path("credit_card.json")
@@ -287,42 +287,10 @@ async def main():
         assert all(k in r for k in ("card_id", "name", "net_rewards", "reason")), "Missing keys in a recommendation."
 
     print(json.dumps(data, indent=2))
-    OUTPUT_FILE = Path("recommendations.json")
+    OUTPUT_FILE = Path("recommendations_Kyle.json")
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
 
 
 if __name__ == "__main__":
     asyncio.run(main())
-
-#Probably don't need this so just going to comment for the moment
-
-# # ---------- Load synthetic transactions ----------
-# TRANSACTION_FILE = Path("synthetic_transactions.json")
-# with open(TRANSACTION_FILE, "r", encoding="utf-8") as f:
-#     transactions = json.load(f)
-
-# # ---------- Aggregate spending by category ----------
-# spending_by_category = {}
-# for txn in transactions:
-#     if txn["type"] == "debit":  # only spent amounts
-#         cat = txn["merchantCategory"]
-#         amt = txn["amount"]
-#         spending_by_category[cat] = spending_by_category.get(cat, 0) + amt
-
-
-# card_scores = []
-# for card in CARD_CATALOG:
-#     score = score_card(card, spending_by_category)
-#     card_scores.append((card["name"], score))
-
-# ---------- Recommend top cards ----------
-# card_scores.sort(key=lambda x: x[1], reverse=True)
-
-# print("\n===== Top Credit Card Recommendations =====")
-# for name, expected_rewards in card_scores[:5]:
-#     print(f"{name}: Estimated net rewards ${expected_rewards:.2f}")
-
-# print("\n===== Spending Summary by Category =====")
-# for cat, amt in spending_by_category.items():
-#     print(f"{cat}: ${amt:.2f}")

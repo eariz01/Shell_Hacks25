@@ -1,0 +1,37 @@
+{
+  "recommendations": [
+    {
+      "card_id": "3",
+      "name": "Venture Rewards",
+      "net_rewards": 697.12,
+      "total_savings": 75697.12,
+      "reason": [
+        "Reason #1: This card offers a solid 2x miles on all purchases, which aligns well with the user's varied spending habits across different categories like travel, retail, dining, and groceries.",
+        "Reason #2: With its annual fee and a substantial signup bonus of 75,000 miles upon spending $4,000 in 3 months, Venture Rewards outperforms cards with lower rewards rates and no signup bonus, securing its spot as the top recommendation.",
+        "Reason #3: This card would be an ideal choice for the customer because the Venture Rewards card would improve their travel experiences, with benefits that will enhance future trips."
+      ]
+    },
+    {
+      "card_id": "2",
+      "name": "Venture X Rewards",
+      "net_rewards": 697.12,
+      "total_savings": 75697.12,
+      "reason": [
+        "Reason #1: This card provides a consistent rewards rate across all spending categories, indicating that the user would benefit from the card's features, like travel credits and lounge access, which can enhance the overall travel experience.",
+        "Reason #2: Ranking second, the Venture X Rewards card offers similar rewards to VentureOne Rewards but with a higher annual fee. This card is more suitable for users who can take full advantage of the premium travel benefits and credits.",
+        "Reason #3: The card will allow you to access exclusive travel benefits and perks that will further improve the quality of the cardholder's trips."
+      ]
+    },
+    {
+      "card_id": "8",
+      "name": "Savor Rewards",
+      "net_rewards": 422.4,
+      "total_savings": 622.4,
+      "reason": [
+        "Reason #1: The card has a high rewards rate in the user's high spending categories.",
+        "Reason #2: This card ranks third because, despite the high annual spending, the rewards are not as high as the rewards that were offered with the other travel cards.",
+        "Reason #3: The card's bonus and rewards align with your spending habits, as the rewards rate in your spending categories will give you a return for your spending."
+      ]
+    }
+  ]
+}

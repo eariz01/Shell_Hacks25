@@ -1,0 +1,37 @@
+{
+  "recommendations": [
+    {
+      "card_id": "8",
+      "name": "Savor Rewards",
+      "net_rewards": 460.32,
+      "total_savings": 660.32,
+      "reason": [
+        "Reason #1: This card is a great match with your spending profile due to its high rewards rate on dining, grocery stores, entertainment, and streaming, which are all significant spending categories for you.",
+        "Reason #2: This card outperforms other cards due to its higher rewards rate in several key spending categories, as well as its bonus travel credit, leading to greater overall rewards.",
+        "Reason #3: This card will benefit your lifestyle by providing significant rewards on common purchases such as groceries and dining, as well as offering a bonus travel credit to enhance your travel experiences."
+      ]
+    },
+    {
+      "card_id": "12",
+      "name": "SavorOne Rewards for Students",
+      "net_rewards": 460.32,
+      "total_savings": 510.32,
+      "reason": [
+        "Reason #1: This card is a strong match with your spending profile because it offers 3% cash back on dining, grocery stores, entertainment, and streaming services, which align well with your transaction history.",
+        "Reason #2: This card ranks highly due to its lucrative rewards on common spending categories, outperforming cards with lower or more general cashback rates.",
+        "Reason #3: This card will benefit your lifestyle by offering rewards on everyday purchases like dining and streaming, making it easier to save money on your regular expenses."
+      ]
+    },
+    {
+      "card_id": "3",
+      "name": "Venture Rewards",
+      "net_rewards": 275.16,
+      "total_savings": 275.16,
+      "reason": [
+        "Reason #1: The card's travel rewards aligns well with your spending on travel-related categories, such as airlines and hotels.",
+        "Reason #2: Ranks highly given that you spend a lot on hotels and air travel, making travel rewards and benefits more beneficial to your lifestyle. Also because the SavorOne Rewards cards are a derivative and this card is a different option",
+        "Reason #3:  The card provides significant rewards on travel related purchases, helping offset the cost of your trips and enhancing your overall travel experience."
+      ]
+    }
+  ]
+}
